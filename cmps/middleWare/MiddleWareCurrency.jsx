@@ -7,6 +7,7 @@ import MiddleWareStatement from './MiddleWareStatement'
 export default function MiddleWareCurrency({ middleWare }) {
 
     const [isMiddleWareOpen, setIsMiddleWareOpen] = useState(false)
+    
     return (
         <View style={middlewareStyle.container}>
            <MiddleWareBtn isMiddleWareOpen={isMiddleWareOpen} setIsMiddleWareOpen={setIsMiddleWareOpen}/>

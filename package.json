@@ -9,9 +9,6 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@mui/icons-material": "^5.4.1",
     "axios": "^0.25.0",
     "expo": "~44.0.2",
     "expo-splash-screen": "~0.14.1",

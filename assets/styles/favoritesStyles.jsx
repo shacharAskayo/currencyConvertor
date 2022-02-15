@@ -1,6 +1,5 @@
 import { StyleSheet } from 'react-native'
 
-
 export default StyleSheet.create({
     'btn-container': {
         width: '100%',
@@ -20,7 +19,7 @@ export default StyleSheet.create({
         textAlign:'center'
     },
     'list-container': {
-        maxHeight:'40%',
+        maxHeight:'30%',
         overflow:'scroll',
         paddingTop:10,
         paddingBottom:10,
@@ -41,6 +40,6 @@ export default StyleSheet.create({
         flexDirection:'row',
         alignItems:'center',
         justifyContent:'space-between',
-        marginBottom:-10
+        marginBottom:-10,
     }
 })

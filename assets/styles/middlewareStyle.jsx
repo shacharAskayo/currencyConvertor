@@ -1,15 +1,12 @@
-
 import { StyleSheet } from 'react-native'
 
-
 export default StyleSheet.create({
-
     container: {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         margin: 10,
-        marginBottom:20
+        marginBottom: 20
     },
     circle: {
         width: 50,
@@ -28,7 +25,7 @@ export default StyleSheet.create({
         fontSize: 20,
         color: 'lightgray',
     },
-    open:{
+    open: {
         marginLeft: -4,
         fontSize: 20,
         color: 'lightgray',
@@ -36,14 +33,26 @@ export default StyleSheet.create({
             { rotate: '270deg' },
         ],
     },
-    "middleware-statement":{
-        marginTop:25,
-        marginBottom:5
+    "middleware-statement-container-wrraper": {
+        display: 'flex', 
+        alignItems: 'flex-start'
     },
-    'currency-name':{
-        fontSize:18,
+    "middleware-statement-container": {
+        marginTop: 10,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+    },
+    line: {
+        height: 25,
+        width: 2,
+        backgroundColor: '#321879'
+    },
+    "middleware-statement": {
+        marginBottom: 5
+    },
+    'currency-name': {
+        fontSize: 18,
         color: '#321879',
-
-
     }
 });

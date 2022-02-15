@@ -1,9 +1,6 @@
-
 import { StyleSheet } from 'react-native'
 
-
 export default StyleSheet.create({
-
     inputAndSelect: {
         display: 'flex',
         flexDirection: 'row',

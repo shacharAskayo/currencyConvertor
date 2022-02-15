@@ -6,7 +6,6 @@ export default StyleSheet.create({
         height: '100%',
         display: 'flex',
         backgroundColor: 'rgba(245,243,249,0.97)',
-        // justifyContent:'space-between',
         padding: 25,
         paddingLeft: 30,
         borderRadius:5
@@ -16,6 +15,5 @@ export default StyleSheet.create({
         fontSize: 22,
         fontWeight: '500',
         marginBottom: 25
-
     },
 });

@@ -24,17 +24,15 @@ async function getCalculatedAmmount(inputCurrency, outputCurrency, inputAmount) 
     }
 }
 
-
-function _checkMemorizedRates(inputCurrency, outputCurrency, amount) {
-    const foundedMemorizeRate = memorizedRates.find(memorizedRate => memorizedRate.inputCurrency === inputCurrency && memorizedRate.outputCurrency === outputCurrency)
-    if (foundedMemorizeRate) return { amount: (amount * foundedMemorizeRate.calcRate).toFixed(2), middleWare: foundedMemorizeRate.middleWare }
-}
-
-
 async function getFavorites(inputCurrency, favs, amount) {
     const fullFavs = favs.map(async fav => {
         return { fav, res: await getCalculatedAmmount(inputCurrency, fav, amount) }
     })
     const resolvedFavorties = await Promise.all(fullFavs)
     return resolvedFavorties
+}
+
+function _checkMemorizedRates(inputCurrency, outputCurrency, amount) {
+    const foundedMemorizeRate = memorizedRates.find(memorizedRate => memorizedRate.inputCurrency === inputCurrency && memorizedRate.outputCurrency === outputCurrency)
+    if (foundedMemorizeRate) return { amount: (amount * foundedMemorizeRate.calcRate).toFixed(2), middleWare: foundedMemorizeRate.middleWare }
 }

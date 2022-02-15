@@ -1,13 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-
 export default StyleSheet.create({
-    'dropdown-container': {
-        // position: 'relative'
-    },
-    'dropdown-title': {
-
-    },
     'list-container': {
         backgroundColor: 'gray',
         width: '100%',

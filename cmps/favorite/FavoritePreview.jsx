@@ -34,7 +34,7 @@ export default function FavoritePreview({ favorite }) {
         </View>
         {favorite.res.middleWare && <MiddleWareBtn isMiddleWareOpen={isMiddleWareOpen} setIsMiddleWareOpen={setIsMiddleWareOpen} />}
       </View>
-      {isMiddleWareOpen && <MiddleWareStatement middleWare={favorite.res.middleWare} />}
+      {isMiddleWareOpen && favorite.res.middleWare && <MiddleWareStatement middleWare={favorite.res.middleWare} />}
     </View>
   )
 }

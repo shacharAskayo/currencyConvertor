@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, TextInput, View, StyleSheet } from 'react-native';
+import { Text, TextInput, View } from 'react-native';
 import CurrencySelect from './CurrencySelect';
 import { mainCountriesLabels } from '../utils/countries'
 import convertorInputStyle from '../assets/styles/convertorInputStyle';

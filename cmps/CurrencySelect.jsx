@@ -1,9 +1,7 @@
 import { View, Picker } from "react-native";
 import currencySelectStyle from '../assets/styles/currencySelectStyle';
 
-
 export default function CurrencySelect({ countriesLabelsList, currency, setCurrency }) {
-
     return (
         <View style={currencySelectStyle[['dropdown-container']]} >
             <Picker
